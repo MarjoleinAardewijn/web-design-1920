@@ -16,8 +16,9 @@ const cacheMiddleWare = (req, res, next) => {
 
 // gzip files
 app.use(compression())
-// cache css and js files
+    // cache css and js files and images
     .use(/.*-[0-9a-f]{10}\..*/, cacheMiddleWare)
+    .use(/.*.(jpg|jpeg|png|gif|ico|svg)$/, cacheMiddleWare)
 
     .set('view engine', 'ejs')
     .set('views', 'views')
