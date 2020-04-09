@@ -16,7 +16,7 @@
     "build:assets": "node scripts/build/build-static-assets.js",
     "postbuild": "node scripts/build/revision-hash.js && node scripts/build/revision-replace.js",
     "watch": "run-p watch:*",
-    "watch:css": "chokidar 'src/css/**/*.css' --command 'npm run build:css'",
+    "watch:css": "chokidar 'src/scss/**/*.scss' --command 'npm run build:css'",
     "watch:assets": "chokidar 'src/**/*.*' --command 'npm run build:assets'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

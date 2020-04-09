@@ -1,0 +1,17 @@
+input[type='submit'],
+button {
+    border: none;
+    padding: 8px 16px;
+    font-size: 16px;
+    background-color: $color-white;
+
+    &:hover,
+    &:focus {
+        background-color: $background-color-items;
+        color: $color-white;
+    }
+}
+
+input[type='submit'] {
+    margin-top: 1rem;
+}
