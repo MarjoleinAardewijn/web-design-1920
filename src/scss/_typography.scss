@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css?family=Didact Gothic");
+
+html {
+    font: 16px "Didact Gothic";
+}
+
+body {
+    font-size: 16px;
+    color: $color-white;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: 900;
+}
+
+input[type='submit'],
+button {
+    color: $color-black;
+}
+
+.year,
+.month,
+.day {
+    label {
+        input {
+            font-size: 100px;
+            text-align: center;
+            color: $color-white;
+        }
+    }
+}
+
+.year,
+.month,
+.day {
+    &:before {
+        text-align: center;
+        font-weight: 900;
+        font-size: 14px;
+    }
+}
+
+.items-wrapper {
+    .item {
+        color: $color-white;
+        text-align: center;
+    }
+}

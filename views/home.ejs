@@ -1,0 +1,37 @@
+<%- include('partials/head') %>
+
+<main>
+    <section class="header-wrapper">
+        <img src="/datepicker-icon.svg" alt="Datepicker Icon">
+        <h1><%= title %></h1>
+    </section>
+
+    <section class="content-wrapper">
+        <form class="form" action="/">
+            <div class="box date">
+                <div class="day">
+                    <label>Dag
+                        <input class="focussable" id="day" type="number" value="<%= day %>" min="1" max="31"/>
+                    </label>
+                </div>
+                <div class="month">
+                    <label>Maand
+                        <input class="focussable" id="month" type="number" value="<%= month %>" min="1" max="12"/>
+                    </label>
+                </div>
+                <div class="year">
+                    <label>Jaar
+                        <input class="focussable" id="year" type="number" value="<%= year %>" min="20" max="30"/>
+                    </label>
+                </div>
+            </div>
+            <input id="submitButton" class="focussable" type="submit" value="Toevoegen">
+        </form>
+    </section>
+
+    <section class="items-wrapper">
+
+    </section>
+</main>
+
+<%- include('partials/footer') %>

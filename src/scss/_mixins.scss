@@ -1,0 +1,9 @@
+@mixin header-box($content, $color) {
+    &:before {
+        position: absolute;
+        width: 150px;
+        content: $content;
+        background: $color;
+        padding: 4px;
+    }
+}
