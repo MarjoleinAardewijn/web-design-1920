@@ -23,9 +23,7 @@ function addItem(date) {
             <div class="item" id="item-${counter}">
                 <div class="date">
                     <p>${date}</p>
-                    <p>... dagen en ... uren</p>
                 </div>
-                <button aria-label="Remove Item" id="close-btn-${counter}" class="focussable">Verwijderen</button>
             </div>
         `;
 
