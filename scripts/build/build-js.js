@@ -3,7 +3,6 @@ const gulp = require('gulp'),
     minify = require('gulp-minify');
 
 return gulp.src([
-    './src/js/observer.js',
     './src/js/focus.js',
     './src/js/datepicker.js',
 ])
