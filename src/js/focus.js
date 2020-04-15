@@ -15,17 +15,6 @@ function focusElement() {
     });
 }
 
-function removeFocus() {
-    console.log('removed focus!');
-    window.removeEventListener('keydown', focusNextElement);
-
-    focussableElements.forEach(focussable => {
-        focussable.removeEventListener('focus', (event) => {
-            state.focussedElement = event.target;
-        })
-    });
-}
-
 function focusNextElement(event) {
     if (event.key !== 'Shift' && event.key !== '/') {
         return;
