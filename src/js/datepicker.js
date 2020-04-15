@@ -1,35 +1,31 @@
-const year = document.querySelector('#year');
-const month = document.querySelector('#month');
-const day = document.querySelector('#day');
-const btnSubmit = document.querySelector('#submitButton');
+const year = document.querySelector('#year'),
+    month = document.querySelector('#month'),
+    day = document.querySelector('#day'),
+    btnSubmit = document.querySelector('#submitButton'),
+    calendarItemsWrapper = document.querySelector('.items-wrapper');
 
 let counter = 0;
-
-console.log(btnSubmit);
 
 btnSubmit.addEventListener('click', getInputValues);
 
 function getInputValues(event){
     event.preventDefault();
 
-    let date = `${day.value} - ${month.value} - ${year.value}`;
+    let date = `${day.value}-${month.value}-${year.value}`;
 
-    console.log(date);
-
-    setItem(date);
+    addItem(date);
 }
 
-
-function setItem(date) {
+function addItem(date) {
     counter++;
 
-    const calendarItemsWrapper = document.querySelector('.items-wrapper'),
-        calendarItem = `
+    const calendarItem = `
             <div class="item" id="item-${counter}">
                 <div class="date">
                     <p>${date}</p>
+                    <p>... dagen en ... uren</p>
                 </div>
-                <button aria-label="Remove Item" id="close-btn-${counter}" class="close focussable">Verwijderen</button>
+                <button aria-label="Remove Item" id="close-btn-${counter}" class="focussable">Verwijderen</button>
             </div>
         `;
 
@@ -42,3 +38,5 @@ function setItem(date) {
         item.remove();
     });
 }
+
+console.log(focussableElements);

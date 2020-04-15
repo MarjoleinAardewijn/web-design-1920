@@ -5,10 +5,12 @@ const basicPage = (res, view, title, revManifest) => {
         })
     },
 
-    pageWithData = (res, view, title, data, revManifest) => {
+    pageWithData = (res, view, title, day, month, year, revManifest) => {
         return res.render(view, {
             title,
-            data,
+            day,
+            month,
+            year,
             revManifest
         });
     };
