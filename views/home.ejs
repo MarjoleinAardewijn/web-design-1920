@@ -1,36 +1,44 @@
 <%- include('partials/head') %>
 
+<section class="logo">
+    <img src="/logo.svg" alt="Custom NS Reisplanner Icon">
+</section>
+
 <main>
     <section class="header-wrapper">
-        <img src="/datepicker-icon.svg" alt="Datepicker Icon">
-        <h1><%= title %></h1>
+        <h1>Plan je reis</h1>
     </section>
 
     <section class="content-wrapper">
         <form class="form" action="/">
-            <div class="box date">
-                <div class="day">
-                    <label>Dag
-                        <input class="focussable" id="day" type="number" value="<%= day %>" min="1" max="31"/>
-                    </label>
-                </div>
-                <div class="month">
-                    <label>Maand
-                        <input class="focussable" id="month" type="number" value="<%= month %>" min="1" max="12"/>
-                    </label>
-                </div>
-                <div class="year">
-                    <label>Jaar
-                        <input class="focussable" id="year" type="number" value="<%= year %>" min="20" max="30"/>
-                    </label>
-                </div>
+            <h2>Van waar naar waar wil je reizen?</h2>
+            <div class="travel_from-to">
+                <label>
+                    Van
+                    <select class="focussable">
+                        <option value="Eindhoven">Thuis</option>
+                        <option value="Amsterdam">Werk</option>
+                    </select>
+                </label>
+                <label>
+                    Naar
+                    <select class="focussable">
+                        <option value="Amsterdam">Werk</option>
+                        <option value="Eindhoven">Thuis</option>
+                    </select>
+                </label>
             </div>
-            <input id="submitButton" class="focussable" type="submit" value="Toevoegen">
+            <h2>Over hoeveel uur wil je vertrekken?</h2>
+            <div class="travel_time">
+                <button class="focussable btn-secondary">Over 1 uur</button>
+                <button class="focussable btn-secondary">Over 2 uur</button>
+            </div>
+            <input id="submitButton" class="focussable btn-primary" type="submit" value="Plan de reis">
         </form>
     </section>
 
-    <section class="items-wrapper">
-
+    <section class="legenda">
+        <img src="/legenda.png" alt="Legenda">
     </section>
 </main>
 

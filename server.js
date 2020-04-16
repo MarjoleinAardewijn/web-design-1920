@@ -53,7 +53,7 @@ app.use(compression())
     .use(express.static('static'))
 
     .get('/', (req, res) => {
-        router.pageWithData(res, 'home', 'Datepicker Prototype v1', getCurrentDay(d), getCurrentMonth(d), getCurrentYear(d), revManifest);
+        router.pageWithData(res, 'home', 'Marijn\'s NS Reisplanner', getCurrentDay(d), getCurrentMonth(d), getCurrentYear(d), revManifest);
     })
 
     .get('/offline', (req, res) => {
