@@ -52,7 +52,7 @@
         button {
             flex: 1;
 
-            &:first-child {
+            &:not(:last-child) {
                 margin-right: 1rem;
             }
         }
