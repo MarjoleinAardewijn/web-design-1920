@@ -7,7 +7,7 @@ body {
 }
 
 h1 {
-    margin: 3.5rem 0;
+    margin: 2.75rem 0;
 }
 
 .header-wrapper {
@@ -19,7 +19,7 @@ h1 {
     position: relative;
     display: flex;
     justify-content: center;
-    margin-top: 11.5rem;
+    margin-top: 6.5rem;
 }
 
 .logo {
@@ -31,4 +31,11 @@ h1 {
     img {
         width: 150px;
     }
+}
+
+.travel-plan {
+    max-width: 400px;
+    word-wrap: break-word; /* Fallback */
+    overflow-wrap: break-word;
+    margin-bottom: 2.5rem;
 }

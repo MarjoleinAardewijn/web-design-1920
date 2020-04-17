@@ -1,9 +1,5 @@
 <%- include('partials/head') %>
 
-<section class="logo">
-    <img src="/logo.svg" alt="Custom NS Reisplanner Icon">
-</section>
-
 <main>
     <section class="header-wrapper">
         <h1>Plan je reis</h1>
@@ -15,14 +11,15 @@
             <div class="travel_from-to">
                 <label>
                     Van
-                    <select class="focussable">
+                    <select class="focussable" id="departureStation">
                         <option value="Eindhoven">Thuis</option>
                         <option value="Amsterdam">Werk</option>
                     </select>
                 </label>
+                <button class="focussable btn-primary swap"><img src="/swap.svg" alt="Swap Button Icon"></button>
                 <label>
                     Naar
-                    <select class="focussable">
+                    <select class="focussable" id="arrivalStation">
                         <option value="Amsterdam">Werk</option>
                         <option value="Eindhoven">Thuis</option>
                     </select>
@@ -30,10 +27,12 @@
             </div>
             <h2>Over hoeveel uur wil je vertrekken?</h2>
             <div class="travel_time">
-                <button class="focussable btn-secondary">Over 1 uur</button>
-                <button class="focussable btn-secondary">Over 2 uur</button>
+                <button class="focussable btn-secondary" id="addOneHour">Over 1 uur</button>
+                <button class="focussable btn-secondary" id="addTwoHours">Over 2 uur</button>
             </div>
-            <input id="submitButton" class="focussable btn-primary" type="submit" value="Plan de reis">
+            <h2 class="confirm">Klopt dit?</h2>
+            <p class="travel-plan">Ik wil graag de treinen zien die nu van Eindhoven naar Amsterdam gaan.</p>
+            <input id="submitButton" class="focussable btn-primary hide" type="submit" value="Ja, plan de reis!">
         </form>
     </section>
 

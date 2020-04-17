@@ -9,4 +9,8 @@ button {
     &.btn-secondary {
         @include btn-secondary;
     }
+
+    &.active {
+        background-color: $ns-secondary-dark;
+    }
 }

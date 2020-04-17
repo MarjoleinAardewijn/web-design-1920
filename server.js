@@ -14,33 +14,6 @@ const cacheMiddleWare = (req, res, next) => {
     next();
 };
 
-const getCurrentDay = (d) => {
-    //get the day
-    //convert day to string
-    let day = d.getDate().toString();
-
-    return day;
-},
-
-getCurrentMonth = (d) => {
-    //get the month
-    let month = d.getMonth();
-
-    return month;
-},
-
-getCurrentYear = (d) => {
-    //get the year
-    let year = d.getFullYear();
-
-    //pull the last two digits of the year
-    year = year.toString().substr(-2);
-
-    return year;
-};
-
-let d = new Date();
-
 // gzip files
 app.use(compression())
     // cache css and js files and images
@@ -53,7 +26,7 @@ app.use(compression())
     .use(express.static('static'))
 
     .get('/', (req, res) => {
-        router.pageWithData(res, 'home', 'Marijn\'s NS Reisplanner', getCurrentDay(d), getCurrentMonth(d), getCurrentYear(d), revManifest);
+        router.basicPage(res, 'home', 'Marijn\'s NS Reisplanner', revManifest);
     })
 
     .get('/offline', (req, res) => {

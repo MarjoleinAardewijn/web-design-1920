@@ -1,8 +1,8 @@
-const focussableElements = document.querySelectorAll('.focussable');
-const state = {
-    focussedElement: null,
-    previousKey: null,
-};
+const focussableElements = document.querySelectorAll('.focussable'),
+    form = document.querySelector('.form'),
+    state = {
+        focussedElement: null,
+    };
 
 function focusElement() {
     console.log('added focus!');
@@ -16,28 +16,56 @@ function focusElement() {
 }
 
 function focusNextElement(event) {
-    if (event.key !== 'Shift' && event.key !== '/') {
+    event.preventDefault();
+
+    keysForwardAndBack(event, focussableElements, 'ArrowLeft', 'ArrowRight');
+    keysForwardAndBack(event, focussableElements, 'Shift', '/');
+    keysForwardAndBack(event, focussableElements, 'k', 'l');
+
+    focusSpecificElement(event, btnSubmit, ' ');
+    focusSpecificElement(event, swap, 'j');
+    click(event, 'Enter');
+}
+
+function keysForwardAndBack(event, focussableElements, backKey, forwardKey) {
+    if (event.key !== forwardKey && event.key !== backKey) {
         return;
     }
 
-    event.preventDefault();
-
-    const {previousKey, focussedElement} = state;
+    const {focussedElement} = state;
     const currentIndex = focussedElement ? [...focussableElements].findIndex(focussable => focussable === focussedElement) : -1;
 
-    console.log('current index: ', currentIndex);
-
-    if (previousKey !== 'Shift' && event.key === '/') {
+    if (event.key === forwardKey) {
         const nextIndex = currentIndex + 1 > focussableElements.length ? 0 : currentIndex + 1;
         const element = focussableElements[nextIndex];
         element.focus();
-    } else if (previousKey === 'Shift' && event.key === '/') {
+    } else if (event.key === backKey) {
         const previousIndex = currentIndex - 1 < 0 ? 0 : currentIndex - 1;
         const element = focussableElements[previousIndex];
         element.focus();
     }
+}
 
-    state.previousKey = event.key;
+function click(event, key){
+    if (event.key !== key) {
+        return;
+    }
+
+    const {focussedElement} = state;
+
+    if (event.key === key) {
+        focussedElement.click();
+    }
+}
+
+function focusSpecificElement(event, element, key) {
+    if (event.key !== key) {
+        return;
+    }
+
+    if (event.key === key) {
+        element.focus();
+    }
 }
 
 focusElement();

@@ -4,7 +4,7 @@ const gulp = require('gulp'),
 
 return gulp.src([
     './src/js/focus.js',
-    './src/js/datepicker.js',
+    './src/js/travel-planner.js',
 ])
     .pipe(concat('index.js'))
     .pipe(minify())
