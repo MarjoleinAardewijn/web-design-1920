@@ -1,17 +1,16 @@
 input[type='submit'],
 button {
-    border: none;
-    padding: 8px 16px;
-    font-size: 16px;
-    background-color: $color-white;
+    @include btn;
 
-    &:hover,
-    &:focus {
-        background-color: $background-color-items;
-        color: $color-white;
+    &.btn-primary {
+        @include btn-primary;
     }
-}
 
-input[type='submit'] {
-    margin-top: 1rem;
+    &.btn-secondary {
+        @include btn-secondary;
+    }
+
+    &.active {
+        background-color: $ns-secondary-dark;
+    }
 }

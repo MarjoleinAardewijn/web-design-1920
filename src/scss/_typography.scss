@@ -1,12 +1,18 @@
-@import url("https://fonts.googleapis.com/css?family=Didact Gothic");
+//@import url("https://fonts.googleapis.com/css?family=Didact Gothic");
+@import url('https://fonts.googleapis.com/css?family=Special+Elite&display=swap');
+//@import url('https://fonts.googleapis.com/css?family=Metal+Mania&display=swap');
+//@import url('https://fonts.googleapis.com/css?family=Inconsolata&display=swap');
+//@import url('https://fonts.googleapis.com/css?family=Anton&display=swap');
 
 html {
-    font: 16px "Didact Gothic";
+    font: 16px $font;
 }
 
 body {
     font-size: 16px;
+    font-size: 1rem;
     color: $color-white;
+    line-height: 1.5em;
 }
 
 h1 {
@@ -19,26 +25,9 @@ button {
     color: $color-black;
 }
 
-.year,
-.month,
-.day {
-    label {
-        input {
-            font-size: 100px;
-            text-align: center;
-            color: $color-white;
-        }
-    }
-}
-
-.year,
-.month,
-.day {
-    &:before {
-        text-align: center;
-        font-weight: 900;
-        font-size: 14px;
-    }
+h1,
+h2 {
+    font-family: $font-special-elite;
 }
 
 .items-wrapper {
@@ -46,4 +35,8 @@ button {
         color: $color-white;
         text-align: center;
     }
+}
+
+.travel-plan {
+    text-align: center;
 }
