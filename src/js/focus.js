@@ -1,8 +1,13 @@
 const focussableElements = document.querySelectorAll('.focussable'),
-    form = document.querySelector('.form'),
     state = {
         focussedElement: null,
     };
+
+window.onload = function() {
+    swap.focus();
+};
+
+document.addEventListener('keydown', refresh);
 
 function focusElement() {
     console.log('added focus!');
@@ -19,12 +24,13 @@ function focusNextElement(event) {
     event.preventDefault();
 
     keysForwardAndBack(event, focussableElements, 'ArrowLeft', 'ArrowRight');
-    keysForwardAndBack(event, focussableElements, 'Shift', '/');
     keysForwardAndBack(event, focussableElements, 'k', 'l');
 
-    focusSpecificElement(event, btnSubmit, ' ');
-    focusSpecificElement(event, swap, 'j');
+    focusSpecificElement(event, btnSubmit, 'p');
+    focusSpecificElement(event, swap, 'o');
+    click(event, ' ');
     click(event, 'Enter');
+    refresh(event);
 }
 
 function keysForwardAndBack(event, focussableElements, backKey, forwardKey) {
@@ -65,6 +71,16 @@ function focusSpecificElement(event, element, key) {
 
     if (event.key === key) {
         element.focus();
+    }
+}
+
+function refresh(event) {
+    if (event.key !== 'r') {
+        return;
+    }
+
+    if (event.key === 'r') {
+        window.location.reload();
     }
 }
 
