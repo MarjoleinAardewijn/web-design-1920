@@ -10,7 +10,7 @@
   </a>
 </p>
 
-![App Home](https://user-images.githubusercontent.com/23479038/80017701-48a69a80-84d5-11ea-9a80-75161a428bb1.png "Marijn's Reisplanner")
+![App Home](https://user-images.githubusercontent.com/23479038/80019982-9d97e000-84d8-11ea-8c2a-32376a6c424e.png "Marijn's Reisplanner")
 
 ## Description
 
