@@ -12,7 +12,7 @@
             <div class="travel_from-to">
                 <label>
                     Van
-                    <select class="focussable" id="departureStation">
+                    <select id="departureStation" disabled="disabled">
                         <option value="Eindhoven">Thuis</option>
                         <option value="Amsterdam">Werk</option>
                     </select>
@@ -20,7 +20,7 @@
                 <button class="focussable btn-primary swap"><img src="/swap.svg" alt="Swap Button Icon"></button>
                 <label>
                     Naar
-                    <select class="focussable" id="arrivalStation">
+                    <select id="arrivalStation" disabled="disabled">
                         <option value="Amsterdam">Werk</option>
                         <option value="Eindhoven">Thuis</option>
                     </select>
@@ -28,7 +28,7 @@
             </div>
             <h2>Over hoeveel uur wil je vertrekken?</h2>
             <div class="travel_time">
-                <button class="focussable btn-secondary" id="addOneHour">Over 1 uur</button>
+                <button class="focussable btn-secondary active" id="addOneHour">Over 1 uur</button>
                 <button class="focussable btn-secondary" id="addTwoHours">Over 2 uur</button>
             </div>
             <h2 class="confirm">Klopt dit?</h2>

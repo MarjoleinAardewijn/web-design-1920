@@ -21,7 +21,7 @@
             width: 100px;
             margin-top: 0.5rem;
             border-radius: 4px;
-            transition: box-shadow .15s ease-in-out;
+            background-color: $ns-secondary-dark;
 
             text-align: center;
             text-align-last: center;
@@ -30,7 +30,7 @@
                 text-align: left;
             }
 
-            @include btn-secondary;
+            //@include btn-secondary;
 
             /* Hide arrows: */
             /* Firefox, Safari and Chrome*/

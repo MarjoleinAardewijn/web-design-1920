@@ -6,31 +6,11 @@ const btnSubmit = document.querySelector('#submitButton'),
     addTwoHours = document.querySelector('#addTwoHours'),
     travelPlan = document.querySelector('.travel-plan');
 
-let startTime,
-    departureStation = '',
-    arrivalStation = '';
+let startTime;
 
 // https://stackoverflow.com/questions/5416767/get-selected-value-text-from-select-on-change
 
-if (departureStationSelect) departureStationSelect.addEventListener('change', function(event) {
-    departureStation = event.target.value;
-    arrivalStation = arrivalStationSelect.value;
-
-    travelPlan.innerText = `Ik wil graag de treinen zien die nu van ${departureStation} naar ${arrivalStation} gaan.`;
-
-    console.log(departureStation, arrivalStation);
-});
-
 swap.addEventListener('click', swapDestinations);
-
-if (arrivalStationSelect) arrivalStationSelect.addEventListener('change', function(event) {
-    arrivalStation = event.target.value;
-    departureStation = departureStationSelect.value;
-
-    travelPlan.innerText = `Ik wil graag de treinen zien die nu van ${departureStation} naar ${arrivalStation} gaan.`;
-
-    console.log(departureStation, arrivalStation);
-});
 
 addOneHour.addEventListener('click', addOneHourToCurrentTime);
 addTwoHours.addEventListener('click', addTwoHoursToCurrentTime);
@@ -40,7 +20,7 @@ btnSubmit.addEventListener('click', getUrl);
 function getUrl(event){
     event.preventDefault();
 
-    startTime = startTime === undefined ? getCurrentTime() : startTime;
+    startTime = startTime === undefined ? getTime(1) : startTime;
 
     location.href=`https://www.ns.nl/reisplanner/#/?vertrek=${departureStationSelect.value}&vertrektype=treinstation&aankomst=${arrivalStationSelect.value}&aankomsttype=treinstation&type=vertrek&tijd=${getCurrentDate()}T${startTime}`;
 }
@@ -70,7 +50,7 @@ function swapDestinations(event) {
         arrivalStationSelect.value = 'Eindhoven';
     }
 
-    travelPlan.innerText = `Ik wil graag de treinen zien die nu van ${departureStationSelect.value} naar ${arrivalStationSelect.value} gaan.`;
+    travelPlan.innerText = `Ik wil graag de treinen zien die over 1 uur van ${departureStationSelect.value} naar ${arrivalStationSelect.value} gaan.`;
 }
 
 function addOneHourToCurrentTime(event) {
@@ -99,14 +79,6 @@ function addTwoHoursToCurrentTime(event) {
 function getTime(hours) {
     let d = new Date(),
         h = (d.getHours() < 10 ? '0' : '') + (d.getHours() + hours),
-        m = (d.getMinutes() < 10 ? '0' : '') + d.getMinutes();
-
-    return h + ':' + m;
-}
-
-function getCurrentTime() {
-    let d = new Date(),
-        h = (d.getHours() < 10 ? '0' : '') + d.getHours(),
         m = (d.getMinutes() < 10 ? '0' : '') + d.getMinutes();
 
     return h + ':' + m;
