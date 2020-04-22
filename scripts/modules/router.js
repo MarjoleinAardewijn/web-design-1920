@@ -1,17 +1,15 @@
-const basicPage = (res, view, title, revManifest) => {
+const basicPage = (res, view, title) => {
         res.render(view, {
-            title,
-            revManifest
+            title
         })
     },
 
-    pageWithData = (res, view, title, day, month, year, revManifest) => {
+    pageWithData = (res, view, title, day, month, year) => {
         return res.render(view, {
             title,
             day,
             month,
-            year,
-            revManifest
+            year
         });
     };
 
