@@ -380,3 +380,5 @@ The sources I used during this project are:
 ## Credits
 
 - [Datepicker Design](https://codepen.io/kimmy/pen/EyzWjV)
+- [NS Colors](https://www.ns.nl/reisplanner/#/)
+- [Material Colors](https://material.io/resources/color/#!/?view.left=0&view.right=0)
