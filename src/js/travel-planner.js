@@ -1,54 +1,38 @@
-const btnSubmit = document.querySelector('#submitButton'),
-    departureStationSelect = document.querySelector('#departureStation'),
-    arrivalStationSelect = document.querySelector('#arrivalStation'),
-    swap = document.querySelector('.swap'),
-    addOneHour = document.querySelector('#addOneHour'),
-    addTwoHours = document.querySelector('#addTwoHours'),
-    travelPlan = document.querySelector('.travel-plan');
+let startTime,
+    departureStation = '',
+    arrivalStation = '';
 
-let startTime;
-
-// https://stackoverflow.com/questions/5416767/get-selected-value-text-from-select-on-change
+if (departureStationSelect) departureStationSelect.addEventListener('change', function(event) {
+    changeSelection(event, departureStationSelect, arrivalStationSelect, departureStation, arrivalStation, `Ik wil graag de treinen zien die over 1 uur van ${departureStation} naar ${arrivalStation} gaan.`);
+});
 
 swap.addEventListener('click', swapDestinations);
+
+if (arrivalStationSelect) arrivalStationSelect.addEventListener('change', function(event) {
+    changeSelection(event, arrivalStationSelect, departureStationSelect, arrivalStation, departureStation, `Ik wil graag de treinen zien die over 1 uur van ${departureStation} naar ${arrivalStation} gaan.`);
+});
 
 addOneHour.addEventListener('click', addOneHourToCurrentTime);
 addTwoHours.addEventListener('click', addTwoHoursToCurrentTime);
 
-btnSubmit.addEventListener('click', getUrl);
+btnSubmit.addEventListener('click', setUrl);
 
-function getUrl(event){
+function setUrl(event) {
     event.preventDefault();
 
     startTime = startTime === undefined ? getTime(1) : startTime;
 
-    location.href=`https://www.ns.nl/reisplanner/#/?vertrek=${departureStationSelect.value}&vertrektype=treinstation&aankomst=${arrivalStationSelect.value}&aankomsttype=treinstation&type=vertrek&tijd=${getCurrentDate()}T${startTime}`;
+    location.href = `https://www.ns.nl/reisplanner/#/?vertrek=${departureStationSelect.value}&vertrektype=treinstation&aankomst=${arrivalStationSelect.value}&aankomsttype=treinstation&type=vertrek&tijd=${getCurrentDate()}T${startTime}`;
 }
 
-function getCurrentDate() {
-    let today = new Date();
-    const day = String(today.getDate()).padStart(2, '0'),
-        month = String(today.getMonth() + 1).padStart(2, '0'),
-        year = today.getFullYear();
-
-    return `${year}-${month}-${day}`;
-}
-
-// https://stackoverflow.com/questions/5853492/change-select-value-on-click-with-javascript
 function swapDestinations(event) {
     event.preventDefault();
 
-    if(departureStationSelect.value === 'Eindhoven') {
-        departureStationSelect.value = 'Amsterdam'; //change it's value
-    } else if (departureStationSelect.value === 'Amsterdam') {
-        departureStationSelect.value = 'Eindhoven';
-    }
+    const departureValue = departureStationSelect.value;
+    const arrivalValue = arrivalStationSelect.value;
 
-    if(arrivalStationSelect.value === 'Eindhoven') {
-        arrivalStationSelect.value = 'Amsterdam'; //change it's value
-    } else if (arrivalStationSelect.value === 'Amsterdam') {
-        arrivalStationSelect.value = 'Eindhoven';
-    }
+    departureStationSelect.value = arrivalValue;
+    arrivalStationSelect.value = departureValue;
 
     travelPlan.innerText = `Ik wil graag de treinen zien die over 1 uur van ${departureStationSelect.value} naar ${arrivalStationSelect.value} gaan.`;
 }
@@ -56,10 +40,9 @@ function swapDestinations(event) {
 function addOneHourToCurrentTime(event) {
     event.preventDefault();
 
-    addOneHour.classList.add('active');
-    addTwoHours.classList.remove('active');
-
     startTime = getTime(1);
+
+    changeActiveButton(addTwoHours, addOneHour);
 
     travelPlan.innerText = `Ik wil graag de treinen zien die over 1 uur van ${departureStationSelect.value} naar ${arrivalStationSelect.value} gaan.`;
 }
@@ -69,17 +52,8 @@ function addTwoHoursToCurrentTime(event) {
 
     startTime = getTime(2);
 
-    addOneHour.classList.remove('active');
-    addTwoHours.classList.add('active');
+    changeActiveButton(addOneHour, addTwoHours);
+
 
     travelPlan.innerText = `Ik wil graag de treinen zien die over 2 uur van ${departureStationSelect.value} naar ${arrivalStationSelect.value} gaan.`;
-}
-
-// https://stackoverflow.com/questions/10599148/how-do-i-get-the-current-time-only-in-javascript
-function getTime(hours) {
-    let d = new Date(),
-        h = (d.getHours() < 10 ? '0' : '') + (d.getHours() + hours),
-        m = (d.getMinutes() < 10 ? '0' : '') + d.getMinutes();
-
-    return h + ':' + m;
 }

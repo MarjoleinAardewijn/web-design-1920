@@ -1,0 +1,38 @@
+.legend {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 2rem;
+    width: 100%;
+
+    transform: translateX(-1em);
+    animation: bounce 2s infinite both;
+    transform-origin: center;
+
+    img {
+        width: 900px;
+    }
+
+    &.hide {
+        display: none;
+    }
+}
+
+.legend-info {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+
+    &.hide {
+        display: none;
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateX(-1em);
+    }
+    50% {
+        transform: translateX(1em);
+    }
+}

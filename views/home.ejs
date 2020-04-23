@@ -6,39 +6,80 @@
         <img src="/logo.png">
     </section>
 
+    <section class="legend-info hide">
+        <p><span class="legend-info_text">Legenda weergeven ( i )</span></p>
+    </section>
+
     <section class="content-wrapper">
         <form class="form" action="/">
+            <div class="message">
+                <p class="error"></p>
+            </div>
             <h2>Van waar naar waar wil je reizen?</h2>
             <div class="travel_from-to">
                 <label>
                     Van
-                    <select id="departureStation" disabled="disabled">
+                    <select id="departureStation" class="focusable">
                         <option value="Eindhoven">Thuis</option>
                         <option value="Amsterdam">Werk</option>
+                        <option value="Schiphol">Schiphol</option>
+                        <option value="Almere">Almere</option>
+                        <option value="Breda">Breda</option>
+                        <option value="Den Haag">Den Haag</option>
+                        <option value="Emmen">Emmen</option>
+                        <option value="Enkhuizen">Enkhuizen</option>
+                        <option value="Groningen">Groningen</option>
+                        <option value="Haarlem">Haarlem</option>
+                        <option value="Hoorn">Hoorn</option>
+                        <option value="Leeuwarden">Leeuwarden</option>
+                        <option value="Leiden">Leiden</option>
+                        <option value="Maastricht">Maastricht</option>
+                        <option value="Nijmegen">Nijmegen</option>
+                        <option value="Rotterdam">Rotterdam</option>
+                        <option value="Tilburg">Tilburg</option>
+                        <option value="Utrecht">Utrecht</option>
+                        <option value="Zaandam">Zaandam</option>
+                        <option value="Zwolle">Zwolle</option>
                     </select>
                 </label>
-                <button class="focussable btn-primary swap"><img src="/swap.svg" alt="Swap Button Icon"></button>
+                <button class="focusable btn-primary swap"><img src="/swap.svg" alt="Swap Button Icon"></button>
                 <label>
                     Naar
-                    <select id="arrivalStation" disabled="disabled">
+                    <select id="arrivalStation" class="focusable">
                         <option value="Amsterdam">Werk</option>
                         <option value="Eindhoven">Thuis</option>
+                        <option value="Schiphol">Schiphol</option>
+                        <option value="Almere">Almere</option>
+                        <option value="Breda">Breda</option>
+                        <option value="Den Haag">Den Haag</option>
+                        <option value="Enkhuizen">Enkhuizen</option>
+                        <option value="Groningen">Groningen</option>
+                        <option value="Haarlem">Haarlem</option>
+                        <option value="Hoorn">Hoorn</option>
+                        <option value="Leeuwarden">Leeuwarden</option>
+                        <option value="Leiden">Leiden</option>
+                        <option value="Maastricht">Maastricht</option>
+                        <option value="Nijmegen">Nijmegen</option>
+                        <option value="Rotterdam">Rotterdam</option>
+                        <option value="Tilburg">Tilburg</option>
+                        <option value="Utrecht">Utrecht</option>
+                        <option value="Zaandam">Zaandam</option>
                     </select>
                 </label>
             </div>
             <h2>Over hoeveel uur wil je vertrekken?</h2>
             <div class="travel_time">
-                <button class="focussable btn-secondary active" id="addOneHour">Over 1 uur</button>
-                <button class="focussable btn-secondary" id="addTwoHours">Over 2 uur</button>
+                <button class="focusable btn-secondary active" id="addOneHour">Over 1 uur</button>
+                <button class="focusable btn-secondary" id="addTwoHours">Over 2 uur</button>
             </div>
             <h2 class="confirm">Klopt dit?</h2>
             <p class="travel-plan">Ik wil graag de treinen zien die nu van Eindhoven naar Amsterdam gaan.</p>
-            <input id="submitButton" class="focussable btn-primary hide" type="submit" value="Ja, plan de reis!">
+            <input id="submitButton" class="focusable btn-primary hide" type="submit" value="Ja, plan de reis!">
         </form>
     </section>
 
-    <section class="legenda">
-        <img src="/legenda.png" alt="Legenda">
+    <section class="legend">
+        <img src="/legend.png" alt="Legenda">
     </section>
 </main>
 

@@ -18,7 +18,7 @@
         select {
             height: 45px;
             font-size: 16px;
-            width: 100px;
+            width: 150px;
             margin-top: 0.5rem;
             border-radius: 4px;
             background-color: $ns-secondary-dark;
@@ -29,8 +29,6 @@
             option {
                 text-align: left;
             }
-
-            //@include btn-secondary;
 
             /* Hide arrows: */
             /* Firefox, Safari and Chrome*/
