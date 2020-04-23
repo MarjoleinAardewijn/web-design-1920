@@ -24,7 +24,6 @@ to his work or home. For more information about Marijn see: [User Scenario (Mari
 
 ## Table of Contents
 
-* [To Do](#To-do)
 * [How To Install](#How-To-Install)
   * [Development](#Development)
   * [Production](#Production)
