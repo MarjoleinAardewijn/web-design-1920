@@ -342,6 +342,8 @@ and the value of the last changed select box will change back to the default val
 ![Error Message](https://user-images.githubusercontent.com/23479038/80120156-e314e580-858a-11ea-86d1-51255bfa8c00.png "Error Message")
 </details>
 
+And I changed the default time to be in an hour instead of the current time.
+
 And finally, for the fun, I also added a custom cursor with the `rock` gesture, which changes a little bit when hovering over buttons and select boxes.
 
 <details>
