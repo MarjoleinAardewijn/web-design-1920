@@ -1,8 +1,4 @@
-//@import url("https://fonts.googleapis.com/css?family=Didact Gothic");
 @import url('https://fonts.googleapis.com/css?family=Special+Elite&display=swap');
-//@import url('https://fonts.googleapis.com/css?family=Metal+Mania&display=swap');
-//@import url('https://fonts.googleapis.com/css?family=Inconsolata&display=swap');
-//@import url('https://fonts.googleapis.com/css?family=Anton&display=swap');
 
 html {
     font: 16px $font;
@@ -10,7 +6,6 @@ html {
 
 body {
     font-size: 16px;
-    font-size: 1rem;
     color: $color-white;
     line-height: 1.5em;
 }
@@ -37,6 +32,7 @@ h2 {
     }
 }
 
-.travel-plan {
+.travel-plan,
+.error {
     text-align: center;
 }

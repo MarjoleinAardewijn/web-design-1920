@@ -1,0 +1,14 @@
+.message {
+    opacity: 0;
+    position: absolute;
+    top: -4rem;
+    background-color: $error-message;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    width: 424px;
+    transition: opacity 1s ease-in-out;
+
+    &.active {
+        opacity: 1;
+    }
+}

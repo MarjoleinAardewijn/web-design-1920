@@ -3,6 +3,8 @@ const gulp = require('gulp'),
     minify = require('gulp-minify');
 
 return gulp.src([
+    './src/js/helpers.js',
+    './src/js/key-bindings.js',
     './src/js/focus.js',
     './src/js/travel-planner.js',
 ])

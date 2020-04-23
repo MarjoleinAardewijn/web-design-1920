@@ -1,0 +1,11 @@
+body {
+    cursor: url('/custom-cursor-auto.png'), auto;
+}
+
+select,
+button,
+input[type='submit'] {
+    &:hover {
+        cursor: url('/custom-cursor-pointer.png'), pointer;
+    }
+}
