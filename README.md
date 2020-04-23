@@ -10,7 +10,7 @@
   </a>
 </p>
 
-![App Home](https://user-images.githubusercontent.com/23479038/80017701-48a69a80-84d5-11ea-9a80-75161a428bb1.png "Marijn's Reisplanner")
+![App Home](https://user-images.githubusercontent.com/23479038/80110186-b1961d00-857e-11ea-90ff-08b1e0b1e342.png "Marijn's Reisplanner")
 
 ## Description
 
@@ -30,14 +30,13 @@ to his work or home. For more information about Marijn see: [User Scenario (Mari
   * [Production](#Production)
 * [User Scenario (Marijn)](#User-Scenario-(Marijn))
 * [Design Principles](#Design-Principles)
-* [Prototypes](#Prototypes)
-  * [First Prototype](#First-Prototype)
+* [User Tests](#User-Tests)
+  * [First User Test](#First-User-Test)
     * [Feedback](#Feedback)
-  * [Second Prototype](#Second-Prototype)
+  * [Final User Test](#Final-User-Test)
     * [Feedback](#Feedback)
-  * [Final Prototype](#Final-Prototype)
-* [Conclusion](#Conclusion)
-* [Feature Wishlist](#Feature-Wishlist)
+* [Final Prototype](#Final-Prototype)
+  * [End Result](#End-Result)
 * [Sources](#Sources)
 * [Credits](#Credits)
 
@@ -157,34 +156,36 @@ I can't base my research on existing design principles because they are made for
 A good way of doing this is by following the **[4 Exclusive Design Principles](https://exclusive-design.vasilis.nl/)** by Vasilis van Gemert. 
 These principles are: **Study situation**, **Ignore conventions**, **Prioritise identity** and **Add nonsense**.
 
-The first point [study situation](https://exclusive-design.vasilis.nl/principles/study-situation/) means that you need to study the person in question and how they will use the app. In what situation is the app 
-going to be used and how will it be navigated. The research about Marijn can be found here: [User Scenario (Marijn)](#User-Scenario-(Marijn)). 
+The first point [study situation](https://exclusive-design.vasilis.nl/principles/study-situation/) means that you need to study the 
+person in question and how they will use the app (situation, nevigation, etc). \
+The research about Marijn can be found here: [User Scenario (Marijn)](#User-Scenario-(Marijn)). 
 
 The second point is [ignore conventions](https://exclusive-design.vasilis.nl/principles/ignore-conventions/). The current conventions are 
 made by, and thus for, designers. Because of this not all of these conventions work for other people, especially people with disabilities.
-In this case some of the conventions should be ignored because they don't work for Marijn. the tab key for example. The convention for this
-is that a user should be able to tab through every item on a website, but in Marijn case this isn't an option because the tab key is on the 
+In Marijn's case some of the conventions should be ignored because they don't work for him, like the tab key for example. The convention for this
+is that a user should be able to tab through every item on a website, but in Marijn's case this isn't an option because the tab key is on the 
 left side of the keyboard and he only uses the right side. So the convention for tabbing through a website should be ignored and changed to 
-meet Marijn's needs.
+meet Marijn's needs, using other key bindings.
 
 The third point is [prioritise identity](https://exclusive-design.vasilis.nl/principles/prioritise-identity/). Usually designers study the people
-for whom they are designing something. But don't ask those people what they would like to see in the design. By including Marijn 
-into my design process and see him as co-designers rather than a study object, he can help coming up with new, relavant, conventions.
-In order to accomplish this I have a weekly meeting with Marijn to test with Marijn, ask questions and actively observe him during the test.
+for whom they are designing something but don't ask those people what they would like to see in the design. By including Marijn 
+into my design process and see him as co-designers rather than a study object, he can help coming up with new, relevant, conventions.
+In order to accomplish this I have a weekly meeting with Marijn to test a prototype, ask questions and observe him during the test. 
+The findings and feedback from the user tests can be found here: [User Tests](#User-Tests).
+
+Beside all the key bindings I also kept the interests Marijn told me in mind during the design process, so that I could incorporate them 
+into the design as well. One example is the custom NS logo in which his name is incorporated.
 
 And at last, [add nonsense](https://exclusive-design.vasilis.nl/principles/add-nonsense/)! Adding nonsense to a website designed 
 for someone with a disability, like Marijn, can be a useful tool to investigate the unknown. And most of all, it's fun! A good way of
 doing this is by adding a concept to your prototype you wouldn't normally add. This because there is a chance that it is not practical. 
 But perhaps by adding nonsense you will find something that can be used anyway and is even functional. \
-Because of Marijn's disability it takes more time to navigate the web. So to let him navigate the app faster I plan to add the functionality 
-that when he clicks on the `spacebar` the submit button will be focused immediately and when focused can be clicked using the `Enter` key 
-to submit the form and go to the NS travel planner.
-And, to make it more fun, I also want to give the legend an animation.
+To make the app more fun, I changed for example the cursor to a hand that makes the `rock` gesture and made it change a bit on hover and gave the legend an animation. 
 
-## Prototypes
+## User Tests
 
-Normally, Marijn should have come to us at the HvA to test the prototypes but, because of Corona, the school is closed and we are 
-not allowed to go outside unless absolutely necessary. Therefor we can't go to Marijn nor can he come to us. 
+Normally, Marijn would have come to us at the HvA for the user tests but, because of Corona, the school is currently closed and we are 
+not allowed to go outside unless absolutely necessary. Therefor we can't go to Marijn nor can he come to us at another location.
 
 So the only solution was to meet online! This had some challenges, because Marijn is sometimes very difficult to understand. Because during the first meeting (via Bongo), 
 where we got to know Marijn, we all had to concentrate very well in order to understand him properly and even then sometimes we couldn't hear what he said. 
@@ -192,11 +193,11 @@ And we couldn't see how he was using his computer, which is very important durin
 so that he could film Marijn's keyboard and we could see what Marijn was doing during the tests. That was very nice, because this way we could see how Marijn was using his computer and 
 Vasilis could also repeat things that Marijn said if we didn't understand it.
 
-In this chapter I will tell more about my prototypes and how the tests went.
+In this chapter I will discuss all the user tests I did with Marijn.
 
-### First Prototype
+### First User Test
 
-For my first prototype I redesigned the date picker so that he could set the date using the up and down `arrow` keys and go to the next input field using the `/` key and to the previous input field using the keys `Shift` + `/`. I chose these keybindings, 
+For my first user test I made a prototype where I redesigned the date picker so that he could set the date using the up and down `arrow` keys and go to the next input field using the `/` key and to the previous input field using the keys `Shift` + `/`. I chose these keybindings, 
 because they are on the right side of the keyboard and are next to each other so therefor he wouldn't have to move him hand very far.
 
 I chose to make the input field extra large, because I saw during the first meeting that I sometimes still uses his mouse to select an input field. So I wanted to test if bigger input field would be easier for him to use.
@@ -229,24 +230,27 @@ These are the some points of improvement that I got from my own test (observing 
 - Add a legend.
 - Use the keys `H`, `J`, `K` and `L`.
 - Everything can be normal sized, do no use large input field.
-- Change the overall color pallet to something "punk", or something that is darker. He likes the music genre: "metal", where dark color are a common theme, so that's something to be aware of.
+- Change the overall color pallet to something "punk", or something that is darker. He likes the music genre: "metal", 
+where dark color are a common theme, so that's something to be aware of.
 - He was very happy with metal/punk-related styling so I it would be nice to add something like that as well.
 - A button "in 1 hour" is very useful. 
 - Think about which keys can be a part of the Sticky Keys.
 - A switch between home and work would be nice.
 - Idea: one button to select that you want to `go from home to work in one hour`.
 
-### Second Prototype
+### Final User Test
 
 After the first user test I came up with the idea to redesign the date picker used in the NS travel planner. This so that planning 
-a trip from home to work and back with the train becomes a lot more pleasant for him. So I decided to delete the date picker I made 
+a trip from home to work and back with the train becomes a lot more pleasant for him. So I decided to delete everything I made 
 for my first prototype and just start from the beginning.
 
 Besides having a story one big issue during the last test was that there wasn't a legend. So I created one that looks exactly like the one in his Mac.
 
 ![Legend Second Prototype](https://user-images.githubusercontent.com/23479038/80018283-13e71300-84d6-11ea-8c6c-e8ab121bbe85.png "Legend Key Bindings Keyboard")
 
-I also added some key bindings to the key bindings I already configured the last time, which were only the `/` key and the `Shift` key. I used the `J`, `K` and `L` keys along with the arrow keys, `spacebar` and the `Enter` key.
+I also added some extra key bindings: the `J`, `K` and `L` keys along with the arrow keys, `spacebar` and the `Enter` key. 
+And added a custom Google Font and a background image of people at a concert making the `rock` gesture, to make it more "punk" and incorporate 
+his love for metal music and concerts.
 
 <details>
     <summary>Second Prototype</summary>
@@ -288,19 +292,88 @@ These are the some points of improvement that I got from my own test (observing 
 - Set the default time to be in an hour.
 - Fix bugs with the select boxes.
 
-### Final Prototype
+## Final Prototype
 
-![Legend Final Prototype](https://user-images.githubusercontent.com/23479038/80019762-4bef5580-84d8-11ea-8156-98fe136e5ba1.png "Legend Key Bindings Keyboard Final Prototype")
+After the final user test with Marijn I made my final prototype. In this prototype I had to change a few things that came up during 
+the user test.
+
+In this prototype I changed some of the key bindings since some of them were confusing for Marijn. Like using the `J` key for switching between home and work.
+So I changed all the key bindings to the following key bindings:
+- `spacebar` and `Enter` key: to switch between home and work, or to click/activate a button.
+- `O` key: to change the focus to the switch button (this was the `J` key in my previous prototype).
+- `P` key: to change the focus to the submit button (this was the `spacebar` in my previous prototype).
+- `left arrow`: go to the previous focusable element.
+- `right arrow`: go to the next focusable element.
+- `H` key: imitating the left arrow key (this was the `K` key in my previous prototype).
+- `L` key: imitating the right arrow key.
+
+I also made sure that the switch between home and work is focused on page load, to let Marijn switch between home and work immediately when pressing the 
+`spacebar` or `Enter` key. 
+And added a hide key (`I`) for the legend and made a refresh key so that he can refresh the page by only pressing the `R` key.
+
+![Legend Final Prototype](https://user-images.githubusercontent.com/23479038/80109979-772c8000-857e-11ea-9cc7-b2065c8954fc.png "Legend Key Bindings Keyboard Final Prototype")
+
+Besides the key bindings I also added more options to the home and work select boxes, so that I could also use the app when travelling to or from other stations.
+The cities/places I added for now are:
+- Schiphol
+- Almere
+- Breda
+- Den Haag
+- Emmen
+- Enkhuizen
+- Groningen
+- Haarlem
+- Hoorn
+- Maastricht
+- Nijmegen
+- Rotterdam
+- Tilburg
+- Zaandam
+- Zwolle
+
+I also fixed the bug Marijn found during the last user test which was that he could also select to travel from home to home which 
+gives an error in the NS travel planner.
+So I made sure that this isn't possible anymore, and when Marijn selects the same values in the select boxes an error will be shown 
+and the value of the last changed select box will change back to the default value (home or work).
 
 <details>
-    <summary>Final Prototype</summary>
+    <summary>Error Message</summary>
     
-![Final Prototype](https://user-images.githubusercontent.com/23479038/80019982-9d97e000-84d8-11ea-8c2a-32376a6c424e.png "Final Prototype")
+![Error Message](https://user-images.githubusercontent.com/23479038/80120156-e314e580-858a-11ea-86d1-51255bfa8c00.png "Error Message")
 </details>
 
-## Feature Wishlist
+And finally, for the fun, I also added a custom cursor with the `rock` gesture, which changes a little bit when hovering over buttons and select boxes.
+
+<details>
+    <summary>Cursor Default</summary>
+    
+![Cursor Default](https://user-images.githubusercontent.com/23479038/80109172-78a97880-857d-11ea-9b1a-dfecea1a26b1.png "Default Cursor")
+</details>
+<details>
+    <summary>Cursor Hover</summary>
+  
+![Cursor Hover](https://user-images.githubusercontent.com/23479038/80109177-79420f00-857d-11ea-96d9-f03e5dbb67c9.png "Cursor Hover")
+</details>
+
+### End Result
+    
+![Final Prototype](https://user-images.githubusercontent.com/23479038/80110186-b1961d00-857e-11ea-90ff-08b1e0b1e342.png "Final Prototype")
+
+<details>
+    <summary>Hidden Legend</summary>
+    
+![Final Prototype - Hidden Legend](https://user-images.githubusercontent.com/23479038/80110173-ad69ff80-857e-11ea-9aa1-11dc30a1a7c0.png "Final Prototype - Hidden Legend")
+</details>
 
 ## Sources
+
+The sources I used during this project are:
+- StackOverflow
+  - [Get Current Time](https://stackoverflow.com/questions/10599148/how-do-i-get-the-current-time-only-in-javascript)
+  - [Change Select Value On Click](https://stackoverflow.com/questions/5853492/change-select-value-on-click-with-javascript)
+  - [Get Selected Value Text From Select On Change](https://stackoverflow.com/questions/5416767/get-selected-value-text-from-select-on-change)
+- [Freepik](https://www.freepik.com/)
+- [Codepen](https://codepen.io/)
 
 ## Credits
 
