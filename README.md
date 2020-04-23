@@ -370,6 +370,7 @@ And finally, for the fun, I also added a custom cursor with the `rock` gesture, 
 ## Sources
 
 The sources I used during this project are:
+- [4 Exclusive Design Principles by Vasilis van Gemert](https://exclusive-design.vasilis.nl/)
 - StackOverflow
   - [Get Current Time](https://stackoverflow.com/questions/10599148/how-do-i-get-the-current-time-only-in-javascript)
   - [Change Select Value On Click](https://stackoverflow.com/questions/5853492/change-select-value-on-click-with-javascript)
