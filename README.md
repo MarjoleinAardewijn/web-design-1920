@@ -241,7 +241,7 @@ After the first user test I came up with the idea to redesign the date picker us
 a trip from home to work and back with the train becomes a lot more pleasant for him. So I decided to delete everything I made 
 for my first prototype and just start from scratch again.
 
-Besides having a story one big issue during the last test was that there wasn't a legend. So I created one that looks exactly like the one in his Mac.
+Besides having a story, one big issue during the last test was that there wasn't a legend. So I created one that looks exactly like the keyboard in his Mac.
 
 ![Legend Second Prototype](https://user-images.githubusercontent.com/23479038/80018283-13e71300-84d6-11ea-8c6c-e8ab121bbe85.png "Legend Key Bindings Keyboard")
 
