@@ -32,7 +32,7 @@ to his work or home. For more information about Marijn see: [User Scenario (Mari
 * [User Tests](#User-Tests)
   * [First User Test](#First-User-Test)
     * [Feedback](#Feedback)
-  * [Final User Test](#Final-User-Test)
+  * [Second User Test](#Second-User-Test)
     * [Feedback](#Feedback)
 * [Final Prototype](#Final-Prototype)
   * [End Result](#End-Result)
@@ -235,7 +235,7 @@ where dark color are a common theme, so that's something to be aware of.
 - A switch between home and work would be nice.
 - Idea: one button to select that you want to `go from home to work in one hour`.
 
-### Final User Test
+### Second User Test
 
 After the first user test I came up with the idea to redesign the date picker used in the NS travel planner. This so that planning 
 a trip from home to work and back with the train becomes a lot more pleasant for him. So I decided to delete everything I made 
