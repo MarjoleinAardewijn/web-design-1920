@@ -310,7 +310,7 @@ And added a hide key (`I`) for the legend and made a refresh key so that he can 
 
 ![Legend Final Prototype](https://user-images.githubusercontent.com/23479038/80109979-772c8000-857e-11ea-9cc7-b2065c8954fc.png "Legend Key Bindings Keyboard Final Prototype")
 
-Besides the key bindings I also added more options to the home and work select boxes, so that I could also use the app when travelling to or from other stations.
+Besides the key bindings I also added more options to the home and work select boxes, so that Marijn could also use the app when travelling to or from other stations.
 The cities/places I added for now are:
 - Schiphol
 - Almere
