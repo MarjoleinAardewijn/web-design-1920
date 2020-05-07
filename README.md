@@ -239,7 +239,7 @@ where dark color are a common theme, so that's something to be aware of.
 
 After the first user test I came up with the idea to redesign the date picker used in the NS travel planner. This so that planning 
 a trip from home to work and back with the train becomes a lot more pleasant for him. So I decided to delete everything I made 
-for my first prototype and just start from the beginning.
+for my first prototype and just start from scratch again.
 
 Besides having a story one big issue during the last test was that there wasn't a legend. So I created one that looks exactly like the one in his Mac.
 
