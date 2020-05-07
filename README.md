@@ -178,7 +178,7 @@ And at last, [add nonsense](https://exclusive-design.vasilis.nl/principles/add-n
 for someone with a disability, like Marijn, can be a useful tool to investigate the unknown. And most of all, it's fun! \
 A good way of doing this is by adding a concept to your prototype you wouldn't normally add. This because there is a chance that it is not practical. 
 But perhaps by adding nonsense you will find something that can be used anyway and is even functional. \
-To make the app more fun, I changed for example the cursor to a hand that makes the `rock` gesture and made it change a bit on hover and gave the legend an animation. 
+To make the app more fun, I changed for example the cursor to a hand that makes the `rock` gesture, made it change a bit on hover and gave the legend an animation. 
 
 ## User Tests
 
