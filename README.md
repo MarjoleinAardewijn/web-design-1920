@@ -138,12 +138,12 @@ they are made for abled people.
 
 He mostly uses his keyboard to navigate, and in the Accessibility settings of his Mac he has Sticky Keys enabled. \
 When he is working on his computer he uses his left hand and therefor only the right side of his keyboard and uses the 
-trackpad with his thumb. Because he only uses the right side of his keyboard, he doesn't navigate a website using `tab` key but just uses his trackpad.
-And to select buttons or other options he also uses `Enter` key, the `arrows` keys, `space bar` and `Shift` key. \
+trackpad with his thumb. Because he only uses the right side of his keyboard, he doesn't navigate a website using the `tab` key, but just uses his trackpad.
+And to select buttons or other options he also uses, besides the trackpad, the `Enter` key, the `arrows` keys, `space bar` and `Shift` key. \
 Something that Marijn really hates is when designers or programmers don't think but just do things, like changing the 
 convention that a button can be clicked using the `Enter` key or `space bar`.
 
-This app is specifically made for Marijn. I redesigned the date picker from the NS travel planner to make it easier for 
+This app is specifically made for Marijn. I redesigned the date picker from the [NS travel planner](https://www.ns.nl/) to make it easier for 
 him to plan a trip with the train.
 
 Down below you can find the results of the research.
