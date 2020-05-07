@@ -195,8 +195,8 @@ In this chapter I will discuss all the user tests I did with Marijn.
 
 ### First User Test
 
-For my first user test I made a prototype where I redesigned the date picker so that he could set the date using the up and down `arrow` keys and go to the next input field using the `/` key and to the previous input field using the keys `Shift` + `/`. I chose these keybindings, 
-because they are on the right side of the keyboard and are next to each other so therefor he wouldn't have to move him hand very far.
+For my first user test I made a prototype where I redesigned the date picker so that he could set the date using the up and down `arrow` keys and go to the next input field using the `/` key and to the previous input field using the keys `Shift` + `/`. I chose these key bindings, 
+because they are on the right side of the keyboard and are next to each other so therefor he wouldn't have to move his hand very far.
 
 I chose to make the input field extra large, because I saw during the first meeting that I sometimes still uses his mouse to select an input field. So I wanted to test if bigger input field would be easier for him to use.
 
@@ -217,8 +217,8 @@ I chose to make the input field extra large, because I saw during the first meet
 - Are there still areas for improvement?
   - There is no story, it's just a date picker. And I would like to see other colors, more punk!
 
-After I told Marijn what the keybinding were he said that they were okay.
-During the test you could really notice that Marijn is a developer himself because he immediately tested the edge cases like negative or decimal numbers, and that was possible. Same goes for leaving the input field empty.
+After I told Marijn what the key bindings were he said that they were okay.
+During the test I could really notice that Marijn is a developer himself because he immediately tested the edge cases for bugs like negative or decimal numbers, and that was possible. Same goes for leaving the input field empty.
 
 **Improvements**
 
