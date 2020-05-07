@@ -170,14 +170,13 @@ The third point is [prioritise identity](https://exclusive-design.vasilis.nl/pri
 for whom they are designing something but don't ask those people what they would like to see in the design. By including Marijn 
 into my design process and see him as co-designers rather than a study object, he can help coming up with new, relevant, conventions.
 In order to accomplish this I have a weekly meeting with Marijn to test a prototype, ask questions and observe him during the test. 
-The findings and feedback from the user tests can be found here: [User Tests](#User-Tests).
-
+The findings and feedback from the user tests can be found here: [User Tests](#User-Tests). \
 Beside all the key bindings I also kept the interests Marijn told me in mind during the design process, so that I could incorporate them 
 into the design as well. One example is the custom NS logo in which his name is incorporated.
 
 And at last, [add nonsense](https://exclusive-design.vasilis.nl/principles/add-nonsense/)! Adding nonsense to a website designed 
-for someone with a disability, like Marijn, can be a useful tool to investigate the unknown. And most of all, it's fun! A good way of
-doing this is by adding a concept to your prototype you wouldn't normally add. This because there is a chance that it is not practical. 
+for someone with a disability, like Marijn, can be a useful tool to investigate the unknown. And most of all, it's fun! \
+A good way of doing this is by adding a concept to your prototype you wouldn't normally add. This because there is a chance that it is not practical. 
 But perhaps by adding nonsense you will find something that can be used anyway and is even functional. \
 To make the app more fun, I changed for example the cursor to a hand that makes the `rock` gesture and made it change a bit on hover and gave the legend an animation. 
 
