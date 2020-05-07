@@ -18,7 +18,7 @@ This is a travel planner for the NS specifically designed for Marijn. Marijn is 
 When he needs to use the train he must indicate this at least an hour in advance so that he can be helped with boarding.
 
 The core functionality of this app is a date picker to see which trains he can take to go to his work or home. Normally, you need to 
-type the departure and destination location and select a date and time of which you are leaving are need to be at your destination.
+type the departure and destination location and select a date and time of when you are leaving or need to be at your destination.
 But to make it more accessible for Marijn he can just click on some buttons using his trackpad or keyboard to see which trains he can take to go 
 to his work or home. For more information about Marijn see: [User Scenario (Marijn)](#User-Scenario-(Marijn)).
 
