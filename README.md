@@ -161,7 +161,7 @@ The research about Marijn can be found here: [User Scenario (Marijn)](#User-Scen
 
 The second point is [ignore conventions](https://exclusive-design.vasilis.nl/principles/ignore-conventions/). The current conventions are 
 made by, and thus for, designers. Because of this not all of these conventions work for other people, especially people with disabilities.
-In Marijn's case some of the conventions should be ignored because they don't work for him, like the tab key for example. The convention for this
+In Marijn's case some of the conventions should be ignored because they don't work for him, like the `tab` key for example. The convention for this
 is that a user should be able to tab through every item on a website, but in Marijn's case this isn't an option because the tab key is on the 
 left side of the keyboard and he only uses the right side. So the convention for tabbing through a website should be ignored and changed to 
 meet Marijn's needs, using other key bindings.
