@@ -185,10 +185,10 @@ To make the app more fun, I changed for example the cursor to a hand that makes 
 Normally, Marijn would have come to us at the HvA for the user tests but, because of Corona, the school is currently closed and we are 
 not allowed to go outside unless absolutely necessary. Therefor we can't go to Marijn nor can he come to us at another location.
 
-So the only solution was to meet online! This had some challenges, because Marijn is sometimes very difficult to understand. Because during the first meeting (via Bongo), 
+So the only solution was to meet online! This had some challenges, because Marijn is sometimes very difficult to understand. During the first meeting (via Bongo), 
 where we got to know Marijn, we all had to concentrate very well in order to understand him properly and even then sometimes we couldn't hear what he said. 
-And we couldn't see how he was using his computer, which is very important during user tests. So the next meeting our teacher Vasilis arranged for him to go to Marijn, 
-so that he could film Marijn's keyboard and we could see what Marijn was doing during the tests. That was very nice, because this way we could see how Marijn was using his computer and 
+But the most important part was that we couldn't see how he was using his computer, which is very important during user tests. So the next meeting our teacher Vasilis arranged for him to go to Marijn, 
+so that he could film Marijn's keyboard and we could see what Marijn was doing during the tests. That was very nice and helpful, because this way we could see how Marijn was using his computer and 
 Vasilis could also repeat things that Marijn said if we didn't understand it.
 
 In this chapter I will discuss all the user tests I did with Marijn.
