@@ -222,8 +222,7 @@ During the test I could really notice that Marijn is a developer himself because
 
 **Improvements**
 
-Here are some points of improvement listed which I found during my own observations via the webcam, from the feedback from Marijn and from the feedback from Marijn to others. 
-These are the some points of improvement that I got from my own test (observing via webcam and feedback) and from feedback he gave to others.
+Here are the some points of improvement that I got from my own test (observing via webcam and feedback) and from feedback Marijn gave to others.
 
 - Add a legend.
 - Use the keys `H`, `J`, `K` and `L`.
